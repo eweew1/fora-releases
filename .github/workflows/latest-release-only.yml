@@ -132,7 +132,9 @@ jobs:
           
           export async function runLatestOnlyPolicy({ repository = process.env.FORA_REPOSITORY, token = process.env.GH_TOKEN, fetchImpl = fetch, log = console.log, summaryPath = process.env.GITHUB_STEP_SUMMARY } = {}) {
             fail(repository === EXPECTED_REPOSITORY, 'This policy is restricted to eweew1/fora-releases.');
-            fail(typeof token === 'string' && /^[A-Za-z0-9_]{20,2048}$/.test(token), 'A repository-scoped GitHub Actions token is required.');
+            // GitHub's ephemeral workflow credential may be an opaque/JWT-style bearer token.
+            // Bound header size and reject whitespace/control characters without assuming PAT syntax.
+            fail(typeof token === 'string' && /^[\x21-\x7e]{20,8192}$/.test(token), 'A repository-scoped GitHub Actions token is required.');
             const base = `/repos/${repository}`;
             const api = async (apiPath, { method = 'GET', body, publicRead = false, allowMissing = false } = {}) => {
               fail(apiPath === base || apiPath.startsWith(`${base}/`), 'Unexpected API repository path.');
