@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
-  <title id="title">FORA — Твоя игра. Твой ритм.</title>
-  <desc id="desc">Зелёный логотип FORA на тёмном фоне.</desc>
+  <title id="title">FORA — Your game. Your pace.</title>
+  <desc id="desc">The FORA logo in green on a dark background.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#24352b"/>
@@ -29,7 +29,6 @@
     <path d="m12 25 1-8h21l-8 8H12Z" fill="#fff" opacity=".18"/>
   </g>
   <text x="264" y="161" font-family="Segoe UI,Arial,sans-serif" font-size="70" font-weight="700" letter-spacing="7" fill="#e4ffc9">FORA</text>
-  <text x="267" y="207" font-family="Segoe UI,Arial,sans-serif" font-size="24" fill="#c4d7bb">Твоя игра. Твой ритм.</text>
+  <text x="267" y="207" font-family="Segoe UI,Arial,sans-serif" font-size="24" fill="#c4d7bb">Your game. Your pace.</text>
   <rect x="268" y="232" width="58" height="3" rx="1.5" fill="#b6ee8d"/>
 </svg>
-
