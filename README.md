@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/fora-banner.svg" width="100%" alt="FORA - Your game. Your pace." />
+  <img src="assets/fora-banner-en.svg" width="100%" alt="FORA - Your game. Your pace." />
 </p>
 
 <p align="center">
